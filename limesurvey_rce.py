@@ -132,7 +132,7 @@ def runExploit(url, username, password):
             sys.exit(1)
 
     except requests.exceptions.RequestException:
-        print(colored("[!] Error in the login request!", "red"))
+        print(colored("\n[!] Error in the login request!\n", "red"))
         sys.exit(1)
 
     print(colored(f"[+] Login successfully as {username}.", "white"))
