@@ -15,7 +15,7 @@ pip install -r requirements.txt
 ## ⚙️ Usage
 
 ```bash
-python3 -t http://example.com -u user -p password123
+python3 limesurvey_rce.py -t http://example.com -u user -p password123
 ```
 
 ### Arguments:
