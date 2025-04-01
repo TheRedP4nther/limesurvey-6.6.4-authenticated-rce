@@ -14,7 +14,6 @@ import sys
 import os
 import re
 
-
 # Global Variables
 survey_login = "index.php/admin/authentication/sa/login"
 survey_upload = "index.php/admin/pluginmanager/sa/upload"
